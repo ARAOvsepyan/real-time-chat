@@ -1,7 +1,9 @@
+require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
 const events = require('events')
-const PORT = 5000;
+
+const PORT = process.env.PORT || 8080
 
 const emitter = new events.EventEmitter();
 
